@@ -1,0 +1,4 @@
+source/server/node_modules
+video
+*.log
+.vscode

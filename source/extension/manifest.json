@@ -1,0 +1,26 @@
+{
+    "name": "WeWatch", 
+    "description": "Watch video together",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "./script/index.js"
+            ],
+            "run_at": "document_end",
+            "all_frames": true
+        }
+    ],
+    "icons": {
+        "192": "./icon/icon.png"
+    },
+    "permissions": [
+        "declarativeNetRequest",
+        "webRequest",
+        "storage"
+    ]
+}
